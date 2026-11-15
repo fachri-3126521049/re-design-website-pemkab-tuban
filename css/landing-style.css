@@ -190,11 +190,20 @@ body {
 }
 
 .kartu-layanan__ikon {
-  width: 40px;
-  height: 40px;
-  background: #a9bfe0;
-  border-radius: 8px;
-  margin-bottom: 4px;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 12px;
+  background: #aec4e3;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.kartu-layanan__ikon img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
 }
 
 .kartu-layanan strong {
