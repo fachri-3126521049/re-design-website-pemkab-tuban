@@ -190,8 +190,8 @@ body {
 }
 
 .kartu-layanan__ikon {
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
   margin: 0 auto 12px;
   background: #aec4e3;
   border-radius: 14px;
@@ -201,8 +201,8 @@ body {
 }
 
 .kartu-layanan__ikon img {
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   object-fit: contain;
 }
 
@@ -652,4 +652,177 @@ body {
   border-top: 1px solid rgba(255, 255, 255, 0.15);
   font-size: 11px;
   color: #9fb3c2;
+}
+.populer.popular-news {
+  background: #ffffff;
+  color: #111;
+  border-radius: 14px;
+  padding: 28px 32px 36px;
+}
+
+.populer.popular-news .popular-news__title {
+  color: #111;
+  font-size: 24px;
+  margin: 0 0 28px;
+}
+
+.populer.popular-news .popular-news__title svg {
+  width: 28px;
+  height: 28px;
+}
+
+.populer.popular-news .popular-news__headline a {
+  color: #111;
+  text-decoration: none;
+}
+
+.populer.popular-news .popular-news__views {
+  color: #222;
+}
+
+/* FIX KEGIATAN PIMPINAN DAERAH */
+
+.kegiatan-pimpinan {
+    display: block !important;
+    width: 100%;
+    margin: 20px 0;
+    text-align: left !important;
+    color: #111827 !important;
+}
+
+.kegiatan-pimpinan__judul {
+    color: #111827 !important;
+    font-size: 17px !important;
+    font-weight: 700;
+    margin: 0 0 12px !important;
+}
+
+.kegiatan-card {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 110px;
+    padding: 12px;
+    background: #ffffff !important;
+    border-radius: 7px;
+    box-shadow: 0 2px 7px rgba(0,0,0,.08);
+}
+
+.kegiatan-card__tanggal {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 34px;
+    height: 65px;
+    background: #e5f0f8 !important;
+    border-radius: 5px;
+}
+
+.kegiatan-card__tanggal strong {
+    color: #0876ad !important;
+    font-size: 17px;
+}
+
+.kegiatan-card__tanggal span {
+    color: #333333 !important;
+    font-size: 11px;
+}
+
+.kegiatan-card__konten {
+    flex: 1;
+    min-width: 0;
+    color: #333333 !important;
+}
+
+.kegiatan-card__meta {
+    color: #777777 !important;
+    font-size: 10px;
+}
+
+.kegiatan-card__konten h3 {
+    color: #111827 !important;
+    font-size: 13px;
+    margin: 5px 0;
+}
+
+.kegiatan-card__konten p {
+    color: #555555 !important;
+    font-size: 11px;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.kegiatan-pimpinan {
+    width: 100%;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.kegiatan-pimpinan__judul {
+    color: #111827;
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.kegiatan-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    background: white;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 110px;
+}
+
+.kegiatan-card__tanggal {
+    flex-shrink: 0;
+    width: 34px;
+    height: 65px;
+    background: #e5f0f8;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.kegiatan-card__tanggal strong {
+    font-size: 17px;
+    color: #0876ad;
+}
+
+.kegiatan-card__tanggal span {
+    font-size: 11px;
+    color: #333;
+}
+
+.kegiatan-card__konten {
+    flex: 1;
+    min-width: 0;
+}
+
+.kegiatan-card__meta {
+    font-size: 10px;
+    color: #777;
+}
+
+.kegiatan-card__konten h3 {
+    font-size: 13px;
+    color: #111;
+    margin: 5px 0;
+}
+
+.kegiatan-card__konten p {
+    font-size: 11px;
+    color: #555;
+    margin: 0;
+    line-height: 1.5;
 }
