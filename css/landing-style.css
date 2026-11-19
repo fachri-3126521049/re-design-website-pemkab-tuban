@@ -19,7 +19,6 @@ body {
     background: #b8c7d3;
     color: #1a2a36;
 
-    /* Pengaturan posisi navbar */
     position: fixed;
     top: 0;
     left: 0;
@@ -27,7 +26,6 @@ body {
     box-sizing: border-box;
     z-index: 1000;
 
-    /* Animasi navbar */
     transition: transform 0.3s ease;
 }
 
