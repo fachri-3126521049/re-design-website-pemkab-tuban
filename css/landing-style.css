@@ -856,3 +856,112 @@ body {
   object-fit: cover;
   display: block;
 }
+/* ===== Posisi: Kegiatan naik ke bawah kolom kiri ===== */
+.warta__grid {
+  grid-template-rows: auto 1fr;
+  align-items: start;
+}
+.warta__grid > :first-child {
+  grid-column: 1;
+  grid-row: 1;
+}
+.warta__grid > aside {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+}
+.kg-section {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+/* ===== Kartu putih ===== */
+.info-card {
+  background: #fff;
+  color: #1a1a1a;
+  border-radius: 14px;
+  padding: 18px 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .06);
+}
+.info-card__title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 14px;
+}
+.info-card__title svg {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 auto;
+}
+
+/* ===== Kegiatan ===== */
+.kg-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  border: 1px solid #e3e8ee;
+  border-radius: 8px;
+  padding: 10px 12px;
+}
+.kg-date {
+  flex: 0 0 auto;
+  min-width: 42px;
+  background: #a9c1e6;
+  color: #1d2f4f;
+  border-radius: 6px;
+  padding: 8px 4px;
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.kg-date span { display: block; }
+.kg-date span:first-child { font-size: 15px; }
+.kg-date span:last-child  { font-size: 12px; }
+.kg-meta    { font-size: 11px; color: #5b6572; margin: 0 0 3px; }
+.kg-heading { font-size: 14px; font-weight: 700; color: #1a1a1a; margin: 0 0 4px; line-height: 1.35; }
+.kg-desc    { font-size: 12px; color: #4b5563; line-height: 1.45; margin: 0; }
+
+/* ===== Berita Terpopuler ===== */
+.pop-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.pop-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+.pop-no {
+  flex: 0 0 auto;
+  min-width: 36px;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1;
+  color: #111;
+}
+.pop-title {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #111;
+  text-decoration: none;
+}
+.pop-title:hover { text-decoration: underline; }
+.pop-views { font-size: 11px; color: #5b6572; margin: 2px 0 0; }
+
+@media (max-width: 900px) {
+  .warta__grid > :first-child,
+  .warta__grid > aside,
+  .kg-section {
+    grid-column: 1;
+    grid-row: auto;
+  }
+}
