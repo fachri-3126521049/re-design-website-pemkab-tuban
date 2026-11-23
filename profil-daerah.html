@@ -1,11 +1,221 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Profil Kabupaten Tuban | Situs Resmi Pemerintah Kabupaten Tuban</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/profil-style.css">
 </head>
 <body>
-    
+
+<!-- Sprite ikon & lambang -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-area" viewBox="0 0 24 24"><path d="M4 20V6l16 14z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M4 20h16" stroke="currentColor" stroke-width="1.8"/></symbol>
+  <symbol id="i-people" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="9" r="2.5"/><circle cx="6" cy="10" r="1.8"/><circle cx="18" cy="10" r="1.8"/><path d="M7.5 18c0-3 2-4.5 4.5-4.5s4.5 1.500 4.500 4.500M2.500 17.500c0-2 1.500-3 3.500-3M21.500 17.500c0-2-1.500-3-3.500-3"/></g></symbol>
+  <symbol id="i-building" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M3 21V5h8v6"/><path d="M6 8h2M6 12h2M6 16h2"/><path d="M11 21v-7l5-4 5 4v7z"/><path d="M15 21v-4h3v4"/></g></symbol>
+  <symbol id="i-waves" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.200" stroke-linecap="round"><path d="M3 7q3-2 6 0t6 0 6 0M3 12q3-2 6 0t6 0 6 0M3 17q3-2 6 0t6 0 6 0"/></g></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.500"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></g></symbol>
+  <symbol id="i-horse" viewBox="0 0 24 24"><path d="M5 20c0-6 2-9 6-11l3-4 1 3 3 2c1 1 0 3-2 3l-3 1c0 3 1 4 3 6" fill="none" stroke="currentColor" stroke-width="1.600" stroke-linejoin="round"/></symbol>
+  <symbol id="i-drop" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.700"><circle cx="12" cy="12" r="9"/><path d="M3 12c4 3 14 3 18 0"/></g></symbol>
+  <symbol id="i-mosque" viewBox="0 0 24 24"><path d="M4 20V10l4-3 4 3v10M12 20V10l4-3 4 3v10z" fill="currentColor"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.700" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 15h18"/></g></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.600"><path d="M12 21s7-6 7-11a7 7 0 10-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.500"/></g></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.500 1.500a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z" fill="none" stroke="currentColor" stroke-width="1.600" stroke-linejoin="round"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.600"><rect x="3" y="5" width="18" height="14" rx="1.500"/><path d="M3 7l9 7 9-7"/></g></symbol>
+  <symbol id="i-asterisk" viewBox="0 0 24 24"><path d="M12 3v18M4 7.500l16 9M4 16.500l16-9" fill="none" stroke="currentColor" stroke-width="1.600" stroke-linecap="round"/></symbol>
+  <symbol id="i-flower" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.500"><circle cx="8" cy="8" r="4"/><circle cx="16" cy="8" r="4"/><circle cx="8" cy="16" r="4"/><circle cx="16" cy="16" r="4"/></g></symbol>
+</svg>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#beranda" aria-label="Situs Resmi Pemerintah Kabupaten Tuban">
+      <img class="brand-logo" src="images/logo.png" alt="Logo Kabupaten Tuban">
+      <span class="brand-text"><strong>SITUS RESMI PEMERINTAH</strong><span>KABUPATEN TUBAN</span></span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Buka menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="main-nav" class="main-nav" aria-label="Menu utama">
+      <a href="#beranda">Beranda</a>
+      <a href="#profil" class="active">Profil Daerah</a>
+      <a href="#layanan">Layanan publik</a>
+      <a href="#berita">Publikasi &amp; Berita</a>
+      <a href="#ppid">PPID &amp; Aduan</a>
+    </nav>
+  </div>
+</header>
+
+<main id="beranda">
+
+  <section class="hero" id="profil">
+    <div class="wrap hero-inner">
+      <div class="hero-text">
+        <h1>Profil Kabupaten <span>Tuban</span></h1>
+        <div class="chips">
+          <a class="chip chip-dark" href="#pimpinan"><svg class="ico"><use href="#i-people"/></svg>kemimpinan daerah</a>
+          <a class="chip chip-light" href="#lambang"><svg class="ico"><use href="#i-flower"/></svg>Filosofi Lambang</a>
+        </div>
+      </div>
+
+      <div class="stats">
+        <article class="stat">
+          <div class="stat-top"><span class="stat-icon"><svg><use href="#i-area"/></svg></span><span class="stat-label">LUAS WILAYAH</span></div>
+          <p class="stat-value" data-count="1839.94" data-decimals="2">1.839,94</p>
+          <p class="stat-desc">KILOMETER PERSEGI DARATAN</p>
+        </article>
+        <article class="stat">
+          <div class="stat-top"><span class="stat-icon"></span><span class="stat-label">KEPENDUDUKAN</span></div>
+          <p class="stat-value" data-count="1.24" data-decimals="2" data-suffix=" Juta">1,24 Juta</p>
+          <p class="stat-desc">Jiwa Terdata Resmi Dukcapil</p>
+        </article>
+        <article class="stat">
+          <div class="stat-top"><span class="stat-icon"><svg><use href="#i-building"/></svg></span><span class="stat-label">ADMINISTRATIF</span></div>
+          <p class="stat-value" data-count="20" data-suffix=" Kec.">20 Kec.</p>
+          <p class="stat-desc">31 Desa &amp; 17 Kelurahan</p>
+        </article>
+        <article class="stat">
+          <div class="stat-top"><span class="stat-icon"><svg><use href="#i-waves"/></svg></span><span class="stat-label">PESISIR UTARA</span></div>
+          <p class="stat-value" data-count="65" data-suffix=" KM">65 KM</p>
+          <p class="stat-desc">Garis Pantai Pantura Jawa</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-title" id="pimpinan-judul">
+    <h2>Pimpinan Kabupaten Tuban</h2>
+  </section>
+
+  <section class="leaders" id="pimpinan">
+    <div class="wrap leaders-grid">
+
+      <article class="leader">
+        <div class="leader-head">
+          <div class="photo"><img src="images/gubernur%20tuban.png" alt="Foto Bupati Tuban, Aditya Halindra Faridzky"></div>
+          <div>
+            <span class="badge badge-blue">BUPATI</span>
+            <h3>Aditya Halindra Faridzky, S.E.</h3>
+          </div>
+        </div>
+        <dl class="info">
+          <div><dt>Masa Bakti:</dt><dd class="link">Periode Aktif Pemkab Tuban</dd></div>
+          <div><dt>Fokus Prioritas:</dt><dd>Transformasi Birokrasi Digital, SDM Unggul &amp; Infrastruktur</dd></div>
+          <div><dt>Sekretariat Pimpinan:</dt><dd class="link"><a href="tel:+62356321020">(0356) 321020 / Kantor Bupati</a></dd></div>
+        </dl>
+      </article>
+
+      <article class="leader">
+        <div class="leader-head">
+          <div class="photo"><img src="images/wakil%20gubernur%20tuban.png" alt="Foto Wakil Bupati Tuban, H. Riyadi"></div>
+          <div>
+            <span class="badge badge-green">WAKIL BUPATI</span>
+            <h3>H. Riyadi,S.H.</h3>
+          </div>
+        </div>
+        <dl class="info">
+          <div><dt>Masa Bakti:</dt><dd class="link">Periode Aktif Pemkab Tuban</dd></div>
+          <div><dt>Fokus Prioritas:</dt><dd>Kemandirian Pangan , Kesejahteraan Petani-Nelayan &amp; Harmonisasi Sosial</dd></div>
+          <div><dt>Sekretariat Pimpinan:</dt><dd class="link"><a href="mailto:info@tubankab.go.id">info@tubankab. go. id</a></dd></div>
+        </dl>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="policy" id="visi">
+    <div class="wrap">
+      <p class="kicker">ARAH KEBIJAKAN<br>STRATEGIS</p>
+      <h2>VISI &nbsp;&amp; 4 Pilar Misi Pembangunan</h2>
+
+      <div class="vision">
+        <span class="vision-icon"><svg><use href="#i-eye"/></svg></span>
+        <div>
+          <p class="vision-label">Visi Resmi Kabpaten Tuban</p>
+          <blockquote>“Terwujudnya kabupaten Tuban yang maju,Berdaya saing dan Sejahtera melalui pembangunan yang berkelanjutan dan ber keadilan.”</blockquote>
+        </div>
+      </div>
+
+      <div class="pillars">
+        <a class="pillar" href="#pilar-1"><span class="num">01</span><span class="pillar-name">Peningkatan Kualitas SDM</span><span class="pillar-link">Pilar SDM Unggul →</span></a>
+        <a class="pillar" href="#pilar-2"><span class="num">02</span><span class="pillar-name">Ekonomi Kerakyatan &amp; Bahari</span><span class="pillar-link">Pilar Kemandirian Pangan →</span></a>
+        <a class="pillar" href="#pilar-3"><span class="num">03</span><span class="pillar-name">Pemerataan Infrastruktur</span><span class="pillar-link">Pilar Konektivitas Wilayah →</span></a>
+        <a class="pillar" href="#pilar-4"><span class="num">04</span><span class="pillar-name">Tata Kelola Akuntabel</span><span class="pillar-link">Pilar Reformasi Birokrasi →</span></a>
+      </div>
+    </div>
+  </section>
+
+  <div class="band" aria-hidden="true"></div>
+
+  <section class="identity" id="lambang">
+    <div class="wrap">
+      <div class="identity-head">
+        <div>
+          <p class="eyebrow">IDENTITAS RESMI DAERAH</p>
+          <h2>Lambang Daerah &amp; Filosofi Luhur</h2>
+        </div>
+        <p class="legal">Berdasarkan Perda No : 2/Prt/DPRD-GR/69. Menggambarkan integritas kepahlawanan Ronggolawe, keluhuran Sunan Bonang, dan kemakmuran maritim Pantura.</p>
+      </div>
+
+      <div class="identity-grid">
+        <div class="emblem-box"><img src="images/logo.png" alt="Lambang Kabupaten Tuban"></div>
+        <div class="philo-grid">
+          <article class="philo"><svg class="ico"><use href="#i-horse"/></svg><div><h3>Kuda Hitam Ronggolawe</h3><p>Melambangkan watak kesatria, dan keberanian menegakkan kedaulatan.</p></div></article>
+          <article class="philo"><svg class="ico"><use href="#i-drop"/></svg><div><h3>Bintang Emas &amp; Tu-Banyu</h3><p>Ketakwaan kepada Tuhan YME serta asal-usul toponimi mata air suci Tuban.</p></div></article>
+          <article class="philo"><svg class="ico"><use href="#i-mosque"/></svg><div><h3>Gapura Sunan Bonang</h3><p>Pintu … nilai Islam Sunan Bonang dan teladan perjuangan Wali Songo.</p></div></article>
+          <article class="philo"><svg class="ico"><use href="#i-book"/></svg><div><h3>Bahari &amp; Semangat 17–8–45</h3><p>7 ombak, 8 lubang tapal kuda, 45 biji jati: ketangguhan maritim Proklamasi RI.</p></div></article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="band band-light" aria-hidden="true"></div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="brand brand-footer">
+      <img class="brand-logo" src="images/logo.png" alt="Logo Kabupaten Tuban">
+      <span class="brand-text"><strong>SITUS RESMI PEMERINTAH</strong><span>KABUPATEN TUBAN</span></span>
+    </div>
+
+    <div>
+      <h3>Alamat &amp; Kontak Resmi</h3>
+      <ul class="contact">
+        <li><svg class="ico"><use href="#i-pin"/></svg><span>Jl. Kartini No. 2, Kutorejo, Kec. Tuban, Kabupaten Tuban, Jawa Timur 62311</span></li>
+        <li><svg class="ico"><use href="#i-phone"/></svg><a href="tel:+62356321014">(0356) 321014 / 321020</a></li>
+        <li><svg class="ico"><use href="#i-mail"/></svg><a href="mailto:diskominfo@tubankab.go.id">diskominfo@tubankab.go.id</a></li>
+        <li><svg class="ico"><use href="#i-asterisk"/></svg><span>Call Center 112 (Bebas Pulsa 24 Jam)</span></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>Kanal Layanan Terpadu</h3>
+      <ul class="links">
+        <li><a href="#">Layanan Kependudukan (Disdukcapil)</a></li>
+        <li><a href="#">Mall Pelayanan Publik (MPP Tuban)</a></li>
+        <li><a href="#">Pajak Daerah &amp; PBB-P2 Online</a></li>
+        <li><a href="#">Siskaperbapo (Harga Komoditas Pasar)</a></li>
+        <li><a href="#">SP4N-LAPOR! Aduan Warga</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>Transparansi &amp; Dokumen</h3>
+      <ul class="links">
+        <li><a href="#">PPID Kabupaten Tuban</a></li>
+        <li><a href="#">LPSE Pengadaan Barang &amp; Jasa</a></li>
+        <li><a href="#">JDIH Produk Hukum Daerah</a></li>
+        <li><a href="#">Open Data Kabupaten Tuban</a></li>
+        <li><a href="#">Rencana Kerja Pemerintah</a></li>
+      </ul>
+    </div>
+  </div>
+  <p class="copyright wrap">© 2025 Pemerintah Kabupaten Tuban. Dikelola oleh Dinas Komunikasi dan Informatika, Statistik dan Persandian.</p>
+</footer>
+
+<script src="js/profil.js"></script>
 </body>
 </html>
