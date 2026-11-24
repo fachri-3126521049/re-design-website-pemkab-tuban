@@ -1,0 +1,182 @@
+/* ===== Token ===== */
+:root{
+  --slate-900:#0a2a4a;
+  --slate-700:#34546a;
+  --slate-500:#4d6578;
+  --grey-header:#9aa9b3;
+  --blue-700:#00508a;
+  --blue-500:#0a6aa8;
+  --blue-300:#adc3e0;
+  --blue-100:#eef2fc;
+  --green-700:#0b7a52;
+  --green-600:#1b8b61;
+  --text:#111;
+  --muted:#4b5563;
+  --white:#fff;
+  --radius:14px;
+  --font:"Plus Jakarta Sans","Montserrat","Segoe UI",Roboto,Arial,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;font-family:var(--font);color:var(--text);background:var(--white);line-height:1.4;-webkit-font-smoothing:antialiased}
+h1,h2,h3,p,dl,dd,ul,blockquote{margin:0;padding:0}
+ul{list-style:none}
+a{color:inherit;text-decoration:none}
+svg{display:block}
+.wrap{width:min(1440px,100% - 64px);margin-inline:auto}
+:focus-visible{outline:3px solid #ffd54a;outline-offset:3px;border-radius:4px}
+.ico{width:22px;height:22px;flex:none}
+
+/* ===== Header ===== */
+.site-header{position:sticky;top:0;z-index:50;background:var(--grey-header);color:#101c26}
+.header-inner{display:flex;align-items:center;gap:20px;min-height:82px}
+.brand{display:flex;align-items:center;gap:8px}
+.brand-logo{width:auto;height:60px;object-fit:contain}
+.brand-text{display:flex;flex-direction:column;line-height:1.1;font-size:1.35rem;font-weight:400}
+.brand-text strong{font-weight:700;letter-spacing:-.2px}
+.main-nav{display:flex;gap:32px;margin-left:12px;font-size:.98rem}
+.main-nav a{padding:6px 0;border-bottom:2px solid transparent;transition:border-color .2s}
+.main-nav a:hover,.main-nav a.active{border-color:currentColor}
+.nav-toggle{display:none;margin-left:auto;background:none;border:0;padding:10px;cursor:pointer}
+.nav-toggle span{display:block;width:26px;height:3px;background:#101c26;margin:5px 0;border-radius:2px;transition:transform .25s,opacity .25s}
+.nav-toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(8px) rotate(45deg)}
+.nav-toggle[aria-expanded="true"] span:nth-child(2){opacity:0}
+.nav-toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+
+/* ===== Hero ===== */
+.hero{background:var(--slate-700);color:#fff;padding:56px 0 52px}
+.hero-inner{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,830px);gap:40px;align-items:start}
+.hero h1{font-size:clamp(2.2rem,4.4vw,3.4rem);font-weight:700;letter-spacing:-1.5px;line-height:1.1}
+.hero h1 span{color:var(--blue-500)}
+.chips{display:flex;flex-wrap:wrap;gap:30px;margin-top:14px}
+.chip{display:inline-flex;align-items:center;gap:10px;width:188px;height:44px;padding:0 14px;border-radius:12px;font-size:.95rem;line-height:1.1;transition:transform .15s,filter .15s}
+.chip:hover{transform:translateY(-2px);filter:brightness(1.06)}
+.chip-dark{background:var(--blue-700);color:#fff}
+.chip-light{background:#cfe0fb;color:#1a2b40}
+.stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:38px 74px}
+.stat{background:#fff;color:var(--text);border-radius:6px;padding:8px 8px 16px;min-height:152px}
+.stat-top{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
+.stat-icon{flex:none;width:54px;height:54px;border-radius:8px;background:var(--blue-300);display:grid;place-items:center;color:#111}
+.stat-icon svg{width:34px;height:34px}
+.stat-label{flex:1;min-width:0;font-size:.66rem;font-weight:400;text-align:right;margin:20px 8px 0 12px;letter-spacing:.2px;overflow-wrap:anywhere}
+.stat-value{font-size:1.7rem;font-weight:700;letter-spacing:.5px;margin-top:14px;font-variant-numeric:tabular-nums}
+.stat-desc{font-size:.95rem}
+
+/* ===== Judul pimpinan ===== */
+.section-title{background:#fff;text-align:center;padding:36px 16px 34px;box-shadow:0 2px 3px rgba(0,0,0,.35);position:relative;z-index:2}
+.section-title h2{font-size:clamp(1.8rem,3vw,2.5rem);font-weight:700;letter-spacing:-.8px}
+
+/* ===== Pimpinan ===== */
+.leaders{background:linear-gradient(180deg,#4a6478 0%,#6f8494 100%);padding:80px 0 70px}
+.leaders-grid{display:grid;grid-template-columns:1fr 1fr;gap:110px}
+.leader{background:#fff;border-radius:14px;padding:16px 20px 20px;align-self:start}
+.leader-head{display:flex;gap:28px;align-items:flex-start;padding:0 0 10px 24px}
+.photo{width:120px;flex:none;background:none;border-radius:2px;overflow:hidden;line-height:0}
+.photo img{width:100%;height:auto;display:block}
+.leader-head > div{padding-top:24px}
+.badge{display:inline-block;min-width:248px;text-align:center;color:#fff;font-weight:600;font-size:1.2rem;padding:2px 18px;border-radius:14px}
+.badge-blue{background:var(--blue-700)}
+.badge-green{background:var(--green-700)}
+.leader h3{font-size:1.3rem;font-weight:600;margin-top:14px;line-height:1.25}
+.info{background:var(--blue-100);border-radius:6px;padding:8px 14px 12px;font-size:1.05rem}
+.info > div{display:grid;grid-template-columns:150px 1fr;gap:12px;padding:8px 0;align-items:start}
+.info dt{font-weight:400;line-height:1.2}
+.info dd{text-align:right}
+.info .link{color:var(--blue-500)}
+.info .link a:hover{text-decoration:underline}
+.info > div:first-child dd{font-size:1rem}
+
+/* ===== Kebijakan ===== */
+.policy{padding:36px 0 56px;text-align:center}
+.kicker{color:var(--green-600);font-weight:600;font-size:1.3rem;line-height:1.2}
+.policy h2{font-size:clamp(1.8rem,3vw,2.5rem);font-weight:700;letter-spacing:-.8px;margin:40px 0 32px}
+.vision{display:flex;gap:36px;align-items:center;background:var(--blue-700);color:#fff;border-radius:12px;padding:24px 46px;text-align:left}
+.vision-icon{width:108px;height:76px;flex:none;border-radius:6px;background:var(--blue-300);display:grid;place-items:center;color:#1a2b40}
+.vision-icon svg{width:44px;height:44px}
+.vision-label{font-size:1.2rem;font-weight:300}
+.vision blockquote{font-size:1.75rem;font-weight:600;letter-spacing:-.4px;line-height:1.2;margin-top:2px}
+.pillars{display:grid;grid-template-columns:repeat(4,1fr);gap:58px;margin-top:48px;text-align:left}
+.pillar{display:flex;flex-direction:column;background:var(--blue-300);border-radius:4px;padding:14px 14px 10px;min-height:148px;transition:transform .2s,box-shadow .2s}
+.pillar:hover{transform:translateY(-3px);box-shadow:0 8px 18px rgba(10,42,74,.25)}
+.num{font-size:1.75rem;font-weight:600;line-height:1.2}
+.pillar-name{font-weight:600;font-size:1.05rem}
+.pillar-link{margin-top:auto;text-align:right;font-weight:600;font-size:1rem}
+
+/* ===== Pita abu ===== */
+.band{height:62px;background:#a9b4bd}
+.band-light{height:60px;background:#d5dce1}
+
+/* ===== Identitas ===== */
+.identity{padding:36px 0 0;margin-top:-6px;background:#fff}
+.identity .wrap{width:min(1440px,100% - 40px)}
+.identity-head{display:flex;justify-content:space-between;gap:40px;align-items:flex-start;margin-bottom:12px}
+.eyebrow{font-size:.78rem;font-weight:600}
+.identity h2{font-size:1.95rem;font-weight:700;letter-spacing:-.6px;line-height:1.15;max-width:420px}
+.legal{max-width:610px;font-size:1rem;font-weight:300;color:#222;line-height:1.2}
+.identity-grid{display:grid;grid-template-columns:325px 1fr;gap:100px 0;gap:24px 105px;align-items:stretch;padding-bottom:20px}
+.emblem-box{background:#eef2fc;display:grid;place-items:center;min-height:255px}
+.emblem-box img{width:auto;height:230px;max-width:100%;object-fit:contain}
+.philo-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px 24px}
+.philo{display:flex;gap:16px;align-items:flex-start;background:var(--blue-100);padding:22px 28px;min-height:126px}
+.philo .ico{margin-top:2px;color:#111}
+.philo h3{font-size:1.05rem;font-weight:500;color:var(--blue-500)}
+.philo p{font-weight:600;font-size:1.02rem;margin-top:12px;line-height:1.25}
+
+/* ===== Footer ===== */
+.site-footer{background:var(--slate-900);color:#fff;padding:36px 0 22px}
+.footer-grid{display:grid;grid-template-columns:1.05fr 1.15fr 1fr 1fr;gap:34px;align-items:start;min-height:330px;width:min(1440px,100% - 64px)}
+.brand-footer .brand-logo{width:auto;height:56px}
+.brand-footer .brand-text{font-size:1.4rem}
+.site-footer h3{font-size:1.3rem;font-weight:600;margin-bottom:12px}
+.contact li{display:flex;gap:6px;align-items:flex-start;font-size:.82rem;margin-bottom:14px;max-width:260px}
+.contact .ico{width:20px;height:20px;margin-top:1px}
+.links li{margin-bottom:11px;font-size:.82rem}
+.links a:hover,.contact a:hover{text-decoration:underline}
+.copyright{font-size:.82rem;margin-top:8px;width:min(1440px,100% - 32px);margin-left:28px}
+
+/* ===== Animasi muat halaman (satu momen) ===== */
+.stat{animation:rise .6s cubic-bezier(.2,.7,.2,1) both}
+.stat:nth-child(2){animation-delay:.08s}.stat:nth-child(3){animation-delay:.16s}.stat:nth-child(4){animation-delay:.24s}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* ===== Responsif ===== */
+@media (max-width:1320px){
+  .hero-inner{grid-template-columns:1fr}
+  .stats{max-width:760px;gap:24px 32px}
+}
+@media (max-width:1200px){
+  .hero-inner{grid-template-columns:1fr}
+  .stats{gap:24px 32px;max-width:760px}
+  .leaders-grid{gap:40px}
+  .pillars{gap:24px}
+  .footer-grid{grid-template-columns:1fr 1fr}
+  .identity-grid{gap:24px}
+}
+@media (max-width:900px){
+  .nav-toggle{display:block}
+  .main-nav{position:absolute;top:100%;left:0;right:0;background:var(--grey-header);flex-direction:column;gap:0;margin:0;padding:8px 32px 18px;display:none;border-top:1px solid rgba(0,0,0,.12)}
+  .main-nav.open{display:flex}
+  .main-nav a{padding:12px 0}
+  .leaders-grid{grid-template-columns:1fr}
+  .pillars{grid-template-columns:1fr 1fr}
+  .identity-grid{grid-template-columns:1fr}
+  .emblem-box{min-height:200px}
+  .identity-head{flex-direction:column;gap:12px}
+  .vision{flex-direction:column;align-items:flex-start;padding:24px}
+  .vision blockquote{font-size:1.35rem}
+}
+@media (max-width:640px){
+  .wrap,.footer-grid{width:calc(100% - 32px)}
+  .brand-text{font-size:1rem}
+  .stats{grid-template-columns:1fr}
+  .chips{gap:12px}
+  .leader-head{flex-direction:column;padding-left:0}
+  .badge{min-width:0}
+  .info > div{grid-template-columns:1fr;gap:2px}
+  .info dd{text-align:left}
+  .pillars{grid-template-columns:1fr}
+  .philo-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr}
+  .copyright{margin-left:16px}
+}

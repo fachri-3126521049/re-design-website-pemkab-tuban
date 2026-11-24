@@ -1,0 +1,417 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background: linear-gradient(180deg, #11476b 0%, #ffffff 100%);
+  color: #ffffff;
+
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 250px;
+  background: #b8c7d3;
+  color: #1a2a36;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+.header.hide {
+  transform: translateY(-100%);
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo img{
+  width: 40px;
+  height: 60px;
+  margin-right: -10px;
+  margin-left: -15px;
+  margin-top: 10px;
+}
+
+.logo-teks {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+.logo-teks strong{
+  font-size: 24px;
+}
+
+.header__menu {
+  display: flex;
+  gap: 24px;
+}
+
+.header__menu a {
+  color: #1a2a36;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.header__menu a:hover {
+  text-decoration: underline;
+}
+
+.main-content {
+  padding: 100px 250px 60px 250px; 
+}
+
+.hero {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 0px 60px;
+}
+
+.hero-title {
+   font-size: 32px;
+  line-height: 1.3;
+  max-width: 700px;
+}
+
+.hero-subtitle {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  max-width: 600px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #cfdbe4;
+}
+
+.news-search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 8px 12px 8px 20px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.search-input-group {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.search-icon {
+  color: #7b8e9b;
+  margin-right: 12px;
+}
+
+.search-input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: 14px;
+  color: #333;
+}
+
+.search-filters {
+  display: flex;
+  gap: 12px;
+}
+
+.filter-dropdown {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 10px 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.white-dropdown {
+  background-color: #ffffff;
+  color: #1a2a36;
+  border: 1px solid #e0e7ed;
+}
+
+.blue-dropdown {
+  background-color: #0073B4;
+  color: #ffffff;
+}
+
+.news-tabs {
+  margin-bottom: 30px;
+}
+
+.pill-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.pill-btn {
+  background-color: #ffffff;
+  color: #1a2a36;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.pill-btn.active {
+  background-color: #0073B4;
+  color: #ffffff;
+}
+
+.announcement-section {
+  margin-bottom: 24px;
+}
+
+.announcement-banner {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.announcement-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.megaphone-icon {
+  background-color: #0F3057; 
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.announcement-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.badge {
+  background-color: #0073B4;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 4px;
+  width: fit-content;
+  text-transform: uppercase;
+}
+
+.announcement-text h4 {
+  color: #1a2a36;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.btn-download {
+  color: #0073B4;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.news-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.news-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  display: flex;
+  padding: 16px;
+  gap: 24px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+
+.news-card:hover {
+  transform: translateY(-2px);
+}
+
+.news-image {
+  flex-shrink: 0;
+}
+
+.news-image img {
+  width: 220px;
+  height: 140px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.news-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.news-meta {
+  font-size: 12px;
+  color: #7b8e9b;
+  margin-bottom: 8px;
+}
+
+.news-title {
+  color: #1a2a36;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+
+.news-stats {
+  font-size: 12px;
+  color: #7b8e9b;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.read-more {
+  align-self: flex-end;
+  color: #1a2a36;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.read-more:hover {
+  color: #0073B4;
+}
+
+.pagination-news {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  border-radius: 8px;
+  color: #7b8e9b;
+  font-size: 13px;
+}
+
+.pagination-numbers {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.page-num {
+  text-decoration: none;
+  color: #1a2a36;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-weight: 600;
+}
+.page-num.active {
+  background-color: #E6F0F9;
+  color: #0073B4;
+}
+.page-dots {
+  color: #7b8e9b;
+  font-weight: bold;
+}
+
+
+.footer {
+  background: #0a2a3d;
+  padding: 40px 20px 20px;
+}
+
+.footer__grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 1.2fr 1fr 1fr;
+  gap: 24px;
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.footer__logo strong {
+  font-size: 18px;
+}
+
+.footer__kolom h5 {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.footer__kolom p,
+.footer__kolom a {
+  display: block;
+  font-size: 11px;
+  line-height: 1.6;
+  color: #cfdbe4;
+  text-decoration: none;
+  margin-bottom: 4px;
+}
+
+.footer__kolom a:hover {
+  text-decoration: underline;
+}
+
+.footer__hak {
+  max-width: 1100px;
+  margin: 30px auto 0;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  font-size: 11px;
+  color: #9fb3c2;
+}

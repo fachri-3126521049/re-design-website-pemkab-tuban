@@ -19,7 +19,6 @@ body {
     background: #b8c7d3;
     color: #1a2a36;
 
-    /* Pengaturan posisi navbar */
     position: fixed;
     top: 0;
     left: 0;
@@ -27,7 +26,6 @@ body {
     box-sizing: border-box;
     z-index: 1000;
 
-    /* Animasi navbar */
     transition: transform 0.3s ease;
 }
 
@@ -881,6 +879,8 @@ body {
   border-radius: 14px;
   padding: 18px 20px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, .06);
+  margin-top: 20px;
+  
 }
 .info-card__title {
   display: flex;
@@ -896,8 +896,7 @@ body {
   height: 18px;
   flex: 0 0 auto;
 }
-
-/* ===== Kegiatan ===== */
+ 
 .kg-item {
   display: flex;
   align-items: flex-start;
@@ -964,4 +963,14 @@ body {
     grid-column: 1;
     grid-row: auto;
   }
+}
+.popular-news__rank { display: inline; }
+.popular-news__item > div { display: inline-block; vertical-align: top; }
+
+.warta__grid {
+  align-items: stretch;
+}
+
+.populer {
+  height: 100%;
 }
