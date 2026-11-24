@@ -26,18 +26,18 @@ a{color:inherit;text-decoration:none}
 img,svg,video{max-width:100%}
 img{height:auto}
 svg{display:block}
-.wrap{width:min(1440px,100% - 2 * var(--gutter));margin-inline:auto}
+.wrap{width:100%;max-width:1440px;margin-inline:auto;padding-inline:var(--gutter)}
 :focus-visible{outline:3px solid #ffd54a;outline-offset:3px;border-radius:4px}
 .ico{width:22px;height:22px;flex:none}
 
 /* ===== Header ===== */
 .site-header{position:sticky;top:0;z-index:50;background:var(--grey-header);color:#101c26}
-.header-inner{display:flex;align-items:center;gap:20px;min-height:82px}
+.header-inner{display:flex;align-items:center;gap:20px;min-height:82px;width:100%;max-width:1440px;margin-inline:auto;padding-inline:var(--gutter)}
 .brand{display:flex;align-items:center;gap:8px;min-width:0}
 .brand-logo{width:auto;height:60px;object-fit:contain}
 .brand-text{display:flex;flex-direction:column;line-height:1.1;font-size:clamp(1rem,1.8vw,1.35rem);font-weight:400}
 .brand-text strong{font-weight:700;letter-spacing:-.2px}
-.main-nav{display:flex;gap:clamp(16px,2.5vw,32px);margin-left:12px;font-size:.98rem}
+.main-nav{display:flex;gap:clamp(16px,2.5vw,32px);margin-left:auto;font-size:.98rem}
 .main-nav a{padding:6px 0;border-bottom:2px solid transparent;transition:border-color .2s;white-space:nowrap}
 .main-nav a:hover,.main-nav a.active{border-color:currentColor}
 .nav-toggle{display:none;margin-left:auto;background:none;border:0;padding:10px;cursor:pointer}
@@ -111,7 +111,6 @@ svg{display:block}
 
 /* ===== Identitas ===== */
 .identity{padding:36px 0 0;margin-top:-6px;background:#fff}
-.identity .wrap{width:min(1440px,100% - 2 * var(--gutter))}
 .identity-head{display:flex;justify-content:space-between;gap:clamp(16px,3vw,40px);align-items:flex-start;margin-bottom:12px}
 .eyebrow{font-size:.78rem;font-weight:600}
 .identity h2{font-size:clamp(1.5rem,2.4vw,1.95rem);font-weight:700;letter-spacing:-.6px;line-height:1.15;max-width:420px}
@@ -127,7 +126,7 @@ svg{display:block}
 
 /* ===== Footer ===== */
 .site-footer{background:var(--slate-900);color:#fff;padding:36px 0 22px}
-.footer-grid{display:grid;grid-template-columns:1.05fr 1.15fr 1fr 1fr;gap:clamp(20px,3vw,34px);align-items:start;width:min(1440px,100% - 2 * var(--gutter));margin-inline:auto}
+.footer-grid{display:grid;grid-template-columns:1.05fr 1.15fr 1fr 1fr;gap:clamp(20px,3vw,34px);align-items:start;width:100%;max-width:1440px;margin-inline:auto;padding-inline:var(--gutter)}
 .brand-footer .brand-logo{width:auto;height:56px}
 .brand-footer .brand-text{font-size:1.4rem}
 .site-footer h3{font-size:1.3rem;font-weight:600;margin-bottom:12px}
@@ -135,7 +134,7 @@ svg{display:block}
 .contact .ico{width:20px;height:20px;margin-top:1px}
 .links li{margin-bottom:11px;font-size:.88rem}
 .links a:hover,.contact a:hover{text-decoration:underline}
-.copyright{font-size:.82rem;margin:24px auto 0;width:min(1440px,100% - 2 * var(--gutter))}
+.copyright{font-size:.82rem;margin:24px auto 0;width:100%;max-width:1440px;padding-inline:var(--gutter)}
 
 /* ===== Animasi muat halaman (satu momen) ===== */
 .stat{animation:rise .6s cubic-bezier(.2,.7,.2,1) both}
